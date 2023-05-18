@@ -1,0 +1,22 @@
+/*-----------Обнуление-----------*/
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/*-----------Служебные блоки-----------*/
+.container {
+  max-width: 1250px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.hidden {
+  max-height: 0px;
+  display: none;
+}
