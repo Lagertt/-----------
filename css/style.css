@@ -218,7 +218,7 @@ section:not(:last-child) {
   width: 40%;
   height: 2px;
   left: 30%;
-  top: 115%;
+  bottom: -30px;
 }
 
 .poster__descr {
