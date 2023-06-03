@@ -79,8 +79,8 @@ p {
 }
 
 .hidden {
-  max-height: 0px;
   display: none;
+  height: 0%;
 }
 
 body {
@@ -370,6 +370,11 @@ section {
   align-self: center;
 }
 
+.tables__item {
+  height: 100%;
+  transition: height 5s ease-in-out;
+}
+
 .tables__item:not(:last-child) {
   margin-bottom: 60px;
 }
@@ -431,6 +436,69 @@ section {
   color: var(--color-dark);
   background-color: transparent;
   border: 2px solid var(--color-accent);
+}
+
+/*-----------------DROP-DOWN LIST-----------------*/
+.propertys__container {
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.propertys__descr {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.prop__top {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.prop__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.prop__title {
+  margin-right: 60px;
+  font-family: 'Roboto Condensed';
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+
+.prop__btn svg {
+  max-height: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.prop__btn {
+  flex-direction: column;
+}
+
+.prop__list {
+  margin: 18px 120px 60px 60px;
+}
+
+.list__item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.list__item {
+  position: relative;
+  text-transform: lowercase;
+}
+
+.list__item::before {
+  position: absolute;
+  content: '';
+  border-radius: 100%;
+  left: -24px;
+  top: 7px;
+  background-color: var(--color-accent);
+  height: 8px;
+  width: 8px;
 }
 
 /*-----------------FINAL TEXT-----------------*/
