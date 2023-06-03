@@ -107,6 +107,27 @@ section:not(:last-child) {
   margin-bottom: var(--margin-block);
 }
 
+.section-title {
+  position: relative;
+  font-family: 'Roboto Condensed';
+  font-weight: 300;
+  font-size: 48px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 45px;
+  width: 100%;
+}
+
+.section-title::before {
+  position: absolute;
+  content: ' ';
+  background-color: var(--color-dark);
+  width: 20%;
+  height: 1px;
+  top: -40%;
+  left: 40%;
+}
+
 /*-----------------HEADER-----------------*/
 
 .header {
@@ -140,7 +161,7 @@ section:not(:last-child) {
 
 .nav__link--active {
   padding-bottom: 16px;
-  border-bottom: solid 2px rgba(243, 246, 253, 30%);
+  border-bottom: solid 2px rgba(243, 246, 253, 100%);
   transition: all 0.2s ease-in-out;
 }
 
@@ -206,3 +227,82 @@ section:not(:last-child) {
 }
 
 /*-----------------MAPS-----------------*/
+
+.map__info {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: space-between;
+  height: 620px;
+}
+
+.map__right-column {
+  height: 100%;
+  z-index: 2;
+}
+
+.map__left-column {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  margin-right: 45px;
+  height: 100%;
+}
+
+.map__descr {
+  max-width: 553px;
+}
+
+.map__descr:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+/* .map__bottom::before {
+  position: absolute;
+  content: ' ';
+  background: var(--color-dark);
+  height: 1px;
+  width: 400%;
+  left: -200%;
+  top: -30%;
+  z-index: 1;
+} */
+
+.map__bottom {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.map__mini-img {
+  width: 60%;
+  margin-right: 30px;
+}
+
+.map__legend {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.shorthands__item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 23px;
+}
+
+.shorthands__icon {
+  max-width: 30px;
+  max-height: 20px;
+}
+
+.shorthands__title {
+  font-size: 16px;
+  margin-left: 14px;
+}
