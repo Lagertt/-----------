@@ -143,3 +143,66 @@ section:not(:last-child) {
   border-bottom: solid 2px rgba(243, 246, 253, 30%);
   transition: all 0.2s ease-in-out;
 }
+
+/*-----------------POSTERS-----------------*/
+.poster {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.poster__filter {
+  background-color: var(--color-blackout);
+}
+
+#Kama_reservoir {
+  background-image: url('/img/Background (1).jpg');
+}
+
+#Kama_HPP {
+  background-image: url('/img/Background (2).jpg');
+}
+
+#crash {
+  background-image: url('/img/Background (3).jpg');
+}
+
+.poster__container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.poster__title {
+  position: relative;
+  max-width: 1010px;
+  font-family: 'Roboto Condensed';
+  font-weight: 300;
+  font-size: 80px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--color-light);
+}
+
+.poster__title::after {
+  content: ' ';
+  position: absolute;
+  background: var(--color-light);
+  width: 40%;
+  height: 2px;
+  left: 30%;
+  top: 115%;
+}
+
+.poster__desr {
+  margin-top: 55px;
+  color: var(--color-light);
+  text-align: center;
+}
+
+/*-----------------MAPS-----------------*/
