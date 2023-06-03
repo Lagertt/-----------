@@ -60,6 +60,16 @@ p {
   font-display: swap;
   font-style: normal;
 }
+
+/* ----------------переменные------------------ */
+
+:root {
+  --color-light: #f3f6fd;
+  --color-dark: #070707;
+  --color-accent: #026779;
+
+  --margin-block: 150px;
+}
 .container {
   max-width: 1250px;
   padding: 0 15px;
