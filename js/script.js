@@ -13,3 +13,14 @@ linksHead.forEach((link) => {
     });
   });
 });
+
+/////////////////////раскрытие таблиц///////////////////////////////
+
+const btnShowMore = document.querySelector('.tables__button');
+btnShowMore.addEventListener('click', () => {
+  const tablesList = document.querySelectorAll('.tables__item');
+  tablesList.forEach((table) => {
+    table.classList.remove('hidden');
+  });
+  btnShowMore.hidden = true;
+});
