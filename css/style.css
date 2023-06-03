@@ -68,12 +68,12 @@ p {
   --color-dark: #070707;
   --color-accent: #026779;
 
-  --margin-block: 200px;
+  --margin-block: 150px;
 }
 
 /*---------------Служебные блоки----------------*/
 .container {
-  max-width: 1210px;
+  max-width: 1100px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -87,7 +87,7 @@ body {
   background-color: var(--color-light);
   font-family: 'Roboto';
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
   color: var(--color-dark);
 }
 
@@ -111,7 +111,7 @@ section:not(:last-child) {
   position: relative;
   font-family: 'Roboto Condensed';
   font-weight: 300;
-  font-size: 42px;
+  font-size: 32px;
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 45px;
@@ -205,7 +205,7 @@ section:not(:last-child) {
   max-width: 1010px;
   font-family: 'Roboto Condensed';
   font-weight: 300;
-  font-size: 72px;
+  font-size: 60px;
   text-align: center;
   text-transform: uppercase;
   color: var(--color-light);
@@ -234,7 +234,7 @@ section:not(:last-child) {
   flex-direction: row;
   align-items: start;
   justify-content: space-between;
-  height: 520px;
+  height: 480px;
 }
 
 .map__right-column {
@@ -251,12 +251,12 @@ section:not(:last-child) {
   height: 100%;
 }
 
-.map__descr {
-  max-width: 553px;
-}
+/* .map__descr {
+  max-width: 580px;
+} */
 
 .map__descr:not(:last-child) {
-  margin-bottom: 40px;
+  margin-bottom: 32px;
 }
 
 /* .map__bottom::before {
@@ -280,7 +280,7 @@ section:not(:last-child) {
 }
 
 .map__mini-img {
-  width: 60%;
+  width: 50%;
   margin-right: 30px;
 }
 
@@ -310,6 +310,10 @@ section:not(:last-child) {
 
 /*-----------------INFO-----------------*/
 
+.info__container {
+  width: 1000px;
+}
+
 .info__block {
   display: flex;
   flex-direction: row;
@@ -320,7 +324,7 @@ section:not(:last-child) {
 
 .info__block:not(:last-child) {
   position: relative;
-  margin-bottom: 115px;
+  margin-bottom: 90px;
 }
 
 .info__block:not(:last-child)::after {
@@ -334,7 +338,7 @@ section:not(:last-child) {
 }
 
 .info__img {
-  max-width: 480px;
+  max-width: 380px;
 }
 
 .info__img:nth-child(odd) {
