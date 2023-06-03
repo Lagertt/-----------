@@ -306,3 +306,51 @@ section:not(:last-child) {
   font-size: 16px;
   margin-left: 14px;
 }
+
+/*-----------------INFO-----------------*/
+
+.info__block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.info__block:not(:last-child) {
+  position: relative;
+  margin-bottom: var(--margin-block);
+}
+
+.info__block:not(:last-child)::after {
+  position: absolute;
+  content: ' ';
+  background-color: var(--color-dark);
+  width: 40%;
+  height: 1px;
+  top: 115%;
+  left: 30%;
+}
+
+.info__img {
+  max-width: 580px;
+}
+
+.info__img:nth-child(odd) {
+  margin-right: 60px;
+}
+
+.info__img:nth-child(even) {
+  margin-left: 60px;
+}
+
+.info__text {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.info__paragraph:not(:last-child) {
+  margin-bottom: 36px;
+}
