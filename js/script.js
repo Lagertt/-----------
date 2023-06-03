@@ -24,3 +24,18 @@ btnShowMore.addEventListener('click', () => {
   });
   btnShowMore.hidden = true;
 });
+
+/////////////////////раскрытие списко///////////////////////////////
+
+const listTitles = document.querySelectorAll('.prop__item');
+listTitles.forEach((title) => {
+  title.addEventListener('click', (event) => {
+    let target = event.target;
+    if (target.nodeName !== 'svg' && target.nodeName !== 'path') return;
+    if (target.nodeName == 'path') target = target.parentNode;
+
+    const list = title.querySelector('.prop__list');
+    list.classList.toggle('hidden');
+    target.style.transform = target.style.transform ? '' : 'rotate(180deg)';
+  });
+});
