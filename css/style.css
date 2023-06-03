@@ -41,21 +41,21 @@ p {
 /* ----------------шрифты---------------- */
 @font-face {
   font-family: 'Roboto';
-  src: url('/fonts/Roboto-Regular.woff2'), url('/fonts/Roboto-Regular.woff');
+  src: url('../fonts/Roboto-Regular.woff2'), url('../fonts/Roboto-Regular.woff');
   font-weight: 400;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
   font-family: 'Roboto';
-  src: url('/fonts/Roboto-Light.woff2'), url('/fonts/Roboto-Light.woff');
+  src: url('../fonts/Roboto-Light.woff2'), url('../fonts/Roboto-Light.woff');
   font-weight: 300;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
   font-family: 'Roboto Condensed';
-  src: url('/fonts/RobotoCondensed-Light.woff2'), url('/fonts/RobotoCondensed-Light.woff');
+  src: url('../fonts/RobotoCondensed-Light.woff2'), url('../fonts/RobotoCondensed-Light.woff');
   font-weight: 300;
   font-display: swap;
   font-style: normal;
@@ -181,15 +181,15 @@ section:not(:last-child) {
 }
 
 #Kama_reservoir {
-  background-image: url('/img/Background (1).jpg');
+  background-image: url('../img/Background (1).jpg');
 }
 
 #Kama_HPP {
-  background-image: url('/img/Background (2).jpg');
+  background-image: url('../img/Background (2).jpg');
 }
 
 #crash {
-  background-image: url('/img/Background (3).jpg');
+  background-image: url('../img/Background (3).jpg');
 }
 
 .poster__container {
