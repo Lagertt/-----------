@@ -359,3 +359,77 @@ section:not(:last-child) {
 .info__paragraph:not(:last-child) {
   margin-bottom: 36px;
 }
+
+/*-----------------TABLES-----------------*/
+.tables__container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.tables__title {
+  align-self: center;
+}
+
+.tables__item:not(:last-child) {
+  margin-bottom: 60px;
+}
+
+.table__title {
+  font-family: 'Roboto Condensed';
+  font-weight: 300;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.table__body {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+.table__body td {
+  vertical-align: top;
+  padding: 10px;
+  border: 1px solid var(--color-dark);
+}
+
+.table__body th {
+  padding: 10px;
+  font-family: 'Roboto Condensed';
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--color-light);
+  background-color: var(--color-accent);
+  border: 1px solid var(--color-dark);
+}
+
+.table__annotation {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.tables__button {
+  align-self: center;
+  font-weight: 300;
+  font-size: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--color-light);
+  padding: 10px 20px;
+  background-color: var(--color-accent);
+  border: 2px solid transparent;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.tables__button:hover {
+  background-color: #003e4d;
+}
+
+.tables__button:active {
+  color: var(--color-dark);
+  background-color: transparent;
+  border: 2px solid var(--color-accent);
+}
