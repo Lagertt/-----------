@@ -68,7 +68,7 @@ p {
   --color-dark: #070707;
   --color-accent: #026779;
 
-  --margin-block: 150px;
+  --margin-block: 200px;
 }
 
 /*---------------Служебные блоки----------------*/
@@ -87,7 +87,7 @@ body {
   background-color: var(--color-light);
   font-family: 'Roboto';
   font-weight: 400;
-  font-size: 24px;
+  font-size: 20px;
   color: var(--color-dark);
 }
 
@@ -111,7 +111,7 @@ section:not(:last-child) {
   position: relative;
   font-family: 'Roboto Condensed';
   font-weight: 300;
-  font-size: 48px;
+  font-size: 42px;
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 45px;
@@ -123,7 +123,7 @@ section:not(:last-child) {
   content: ' ';
   background-color: var(--color-dark);
   width: 20%;
-  height: 1px;
+  height: 2px;
   top: -40%;
   left: 40%;
 }
@@ -144,12 +144,12 @@ section:not(:last-child) {
 }
 
 .nav__item {
-  color: var(--color-light);
-  text-transform: uppercase;
-  padding: 50px 0;
+  padding: 30px 0;
 }
 
 .nav__link {
+  color: var(--color-light);
+  text-transform: uppercase;
   padding-bottom: 16px;
   border-bottom: solid 2px rgba(0, 0, 0, 0);
   transition: border 0.2s ease-in-out;
@@ -173,7 +173,8 @@ section:not(:last-child) {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  background-attachment: fixed;
+  height: 90vh;
 }
 
 .poster__filter {
@@ -204,7 +205,7 @@ section:not(:last-child) {
   max-width: 1010px;
   font-family: 'Roboto Condensed';
   font-weight: 300;
-  font-size: 80px;
+  font-size: 72px;
   text-align: center;
   text-transform: uppercase;
   color: var(--color-light);
@@ -220,7 +221,7 @@ section:not(:last-child) {
   top: 115%;
 }
 
-.poster__desr {
+.poster__descr {
   margin-top: 55px;
   color: var(--color-light);
   text-align: center;
@@ -233,7 +234,7 @@ section:not(:last-child) {
   flex-direction: row;
   align-items: start;
   justify-content: space-between;
-  height: 620px;
+  height: 520px;
 }
 
 .map__right-column {
@@ -319,7 +320,7 @@ section:not(:last-child) {
 
 .info__block:not(:last-child) {
   position: relative;
-  margin-bottom: var(--margin-block);
+  margin-bottom: 115px;
 }
 
 .info__block:not(:last-child)::after {
@@ -333,7 +334,7 @@ section:not(:last-child) {
 }
 
 .info__img {
-  max-width: 580px;
+  max-width: 480px;
 }
 
 .info__img:nth-child(odd) {
