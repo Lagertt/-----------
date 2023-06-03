@@ -469,7 +469,7 @@ section {
 }
 
 .prop__btn svg {
-  max-height: 20px;
+  width: 38px;
   transition: transform 0.3s ease-in-out;
 }
 
