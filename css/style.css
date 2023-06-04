@@ -554,3 +554,40 @@ section {
 .footer__nav .nav__link {
   padding-bottom: 5px;
 }
+
+/*-----------------video-----------------*/
+
+.video {
+  position: relative;
+  width: 100%;
+  /* width: 100%;
+  overflow: hidden; */
+}
+
+.video__object {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video__btn {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 80px;
+  height: 80px;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  color: var(--color-accent);
+  transition: color 0.2s ease-in-out;
+  z-index: 10;
+}
+
+.video__btn:hover {
+  color: #003e4d;
+}
+
+.video__btn svg {
+  fill: currentColor;
+}

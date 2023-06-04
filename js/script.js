@@ -22,10 +22,10 @@ btnShowMore.addEventListener('click', () => {
   tablesList.forEach((table) => {
     table.classList.remove('hidden');
   });
-  btnShowMore.hidden = true;
+  btnShowMore.classList.add('hidden');
 });
 
-/////////////////////раскрытие списко///////////////////////////////
+/////////////////////раскрытие списков///////////////////////////////
 
 const listTitles = document.querySelectorAll('.prop__item');
 listTitles.forEach((title) => {
@@ -38,4 +38,18 @@ listTitles.forEach((title) => {
     list.classList.toggle('hidden');
     target.style.transform = target.style.transform ? '' : 'rotate(180deg)';
   });
+});
+
+/////////////////////включение видео///////////////////////////////
+const btnPlay = document.querySelector('.video__btn');
+const video = document.querySelector('.video__object');
+btnPlay.addEventListener('click', () => {
+  video.play();
+  video.setAttribute('controls', 'controls');
+  btnPlay.classList.add('hidden');
+});
+
+video.addEventListener('ended', () => {
+  btnPlay.classList.remove('hidden');
+  video.removeAttribute('controls', 'controls');
 });
