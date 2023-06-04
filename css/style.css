@@ -78,6 +78,10 @@ p {
   margin: 0 auto;
 }
 
+.container--short {
+  max-width: 900px;
+}
+
 .hidden {
   display: none;
   height: 0%;
@@ -173,7 +177,7 @@ section {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 90vh;
+  height: 100vh;
 }
 
 .poster__filter {
@@ -238,7 +242,6 @@ section {
 
 .map__right-column {
   height: 100%;
-  z-index: 2;
 }
 
 .map__left-column {
@@ -250,24 +253,14 @@ section {
   height: 100%;
 }
 
-/* .map__descr {
-  max-width: 580px;
-} */
+.map__left-column--custom {
+  margin-right: 0;
+  margin-left: 45px;
+}
 
 .map__descr:not(:last-child) {
   margin-bottom: 32px;
 }
-
-/* .map__bottom::before {
-  position: absolute;
-  content: ' ';
-  background: var(--color-dark);
-  height: 1px;
-  width: 400%;
-  left: -200%;
-  top: -30%;
-  z-index: 1;
-} */
 
 .map__bottom {
   position: relative;
@@ -302,6 +295,10 @@ section {
   max-height: 20px;
 }
 
+.map__scale {
+  margin-top: 10px;
+  max-width: 200px;
+}
 .shorthands__title {
   font-size: 16px;
   margin-left: 14px;
@@ -309,9 +306,9 @@ section {
 
 /*-----------------INFO-----------------*/
 
-.info__container {
+/* .info__container {
   width: 1000px;
-}
+} */
 
 .info__block {
   display: flex;
@@ -440,7 +437,7 @@ section {
 
 /*-----------------DROP-DOWN LIST-----------------*/
 .propertys__container {
-  width: 1000px;
+  /* width: 1000px; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -470,11 +467,18 @@ section {
 
 .prop__btn svg {
   width: 38px;
+  stroke: currentColor;
   transition: transform 0.3s ease-in-out;
 }
 
 .prop__btn {
+  color: var(--color-accent);
   flex-direction: column;
+  transition: color 0.2s ease-in-out;
+}
+
+.prop__btn:hover {
+  color: #003e4d;
 }
 
 .prop__list {
@@ -502,9 +506,9 @@ section {
 }
 
 /*-----------------FINAL TEXT-----------------*/
-.text__container {
+/* .text__container {
   width: 1000px;
-}
+} */
 
 .text__title::before {
   height: 1px;
