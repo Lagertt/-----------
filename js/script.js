@@ -15,8 +15,8 @@ linksHead.forEach((link) => {
 });
 
 /////////////////////раскрытие таблиц///////////////////////////////
-
 const btnShowMore = document.querySelector('.tables__button');
+
 btnShowMore.addEventListener('click', () => {
   const tablesList = document.querySelectorAll('.tables__item');
   tablesList.forEach((table) => {
@@ -26,8 +26,8 @@ btnShowMore.addEventListener('click', () => {
 });
 
 /////////////////////раскрытие списков///////////////////////////////
-
 const listTitles = document.querySelectorAll('.prop__item');
+
 listTitles.forEach((title) => {
   title.addEventListener('click', (event) => {
     let target = event.target;
@@ -43,6 +43,7 @@ listTitles.forEach((title) => {
 /////////////////////включение видео///////////////////////////////
 const btnPlay = document.querySelector('.video__btn');
 const video = document.querySelector('.video__object');
+
 btnPlay.addEventListener('click', () => {
   video.play();
   video.setAttribute('controls', 'controls');

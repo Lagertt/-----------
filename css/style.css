@@ -141,7 +141,8 @@ section {
 }
 
 .header__container {
-  padding: 30px 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .nav__list {
@@ -156,6 +157,7 @@ section {
   padding-bottom: 16px;
   border-bottom: solid 2px rgba(0, 0, 0, 0);
   transition: border 0.2s ease-in-out;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .nav__link:hover {
@@ -266,7 +268,7 @@ section {
   position: relative;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: end;
   justify-content: space-between;
   width: 100%;
 }
@@ -277,6 +279,8 @@ section {
 }
 
 .map__legend {
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -295,13 +299,13 @@ section {
   max-height: 20px;
 }
 
-.map__scale {
-  margin-top: 10px;
-  max-width: 200px;
-}
 .shorthands__title {
   font-size: 16px;
   margin-left: 14px;
+}
+
+.map__scale--big {
+  max-width: 200px;
 }
 
 /*-----------------INFO-----------------*/
@@ -338,11 +342,11 @@ section {
 }
 
 .info__img:nth-child(odd) {
-  margin-right: 60px;
+  margin-right: 40px;
 }
 
 .info__img:nth-child(even) {
-  margin-left: 60px;
+  margin-left: 40px;
 }
 
 .info__text {
@@ -353,7 +357,7 @@ section {
 }
 
 .info__paragraph:not(:last-child) {
-  margin-bottom: 36px;
+  margin-bottom: 24px;
 }
 
 /*-----------------TABLES-----------------*/
@@ -475,6 +479,7 @@ section {
   color: var(--color-accent);
   flex-direction: column;
   transition: color 0.2s ease-in-out;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .prop__btn:hover {
@@ -525,7 +530,9 @@ section {
 }
 
 .footer__container {
-  padding: 40px 0;
+  height: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
   display: flex;
   align-items: start;
   justify-content: space-between;
@@ -535,16 +542,18 @@ section {
   color: var(--color-light);
   margin-right: 40px;
 }
-.footer__copyright {
-  margin-bottom: 24px;
-}
 .footer__descr {
   font-size: 16px;
-  max-width: 680px;
 }
+
+.footer__copyright {
+  margin-bottom: 20px;
+}
+
 .footer__nav .nav__list {
   flex-direction: column;
   align-items: start;
+  justify-content: space-between;
 }
 
 .footer__nav .nav__item:not(:last-child) {
@@ -560,14 +569,11 @@ section {
 .video {
   position: relative;
   width: 100%;
-  /* width: 100%;
-  overflow: hidden; */
 }
 
 .video__object {
   display: block;
   width: 100%;
-  height: 100%;
   object-fit: cover;
 }
 
@@ -582,6 +588,7 @@ section {
   color: var(--color-accent);
   transition: color 0.2s ease-in-out;
   z-index: 10;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .video__btn:hover {
