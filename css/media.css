@@ -1,5 +1,40 @@
-@media (max-width: 959px) {
+@media (max-width: 900px) {
+  .map__mini-img {
+    display: none;
+  }
 }
 
-@media (max-width: 399px) {
+@media (max-width: 768px) {
+  .body {
+    font-size: 16px;
+  }
+  .info__block {
+    flex-direction: column-reverse;
+    row-gap: 30px;
+    align-items: center;
+  }
+  .info__block--reverse {
+    flex-direction: column-reverse;
+  }
+  .info__paragraph {
+    text-align: justify;
+  }
+  .info__img {
+    width: 70%;
+    flex: 0 0 100px;
+  }
+  .info__img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .info__block:not(:last-child)::after {
+    bottom: -50px;
+  }
+
+  /* ///////////////////////////////// */
+
+  .poster__title {
+    font-size: 48px;
+  }
 }
