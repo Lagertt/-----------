@@ -53,15 +53,64 @@
   .map__legend {
     align-items: center;
   }
+
   .map__descr {
     text-align: justify;
   }
+
   .map__right-column {
-    width: 70%;
+    width: 100%;
+    flex: 0 0 350px;
   }
+
   .map__shorthands {
     flex-direction: row;
     flex-wrap: wrap;
     column-gap: 30px;
+  }
+
+  /* ///////////////////////////////// */
+  .footer__container {
+    flex-direction: column;
+    row-gap: 30px;
+    align-items: start;
+  }
+
+  .footer__descr {
+    text-align: justify;
+  }
+
+  /* ///////////////////////////////// */
+
+  .table__box--tail {
+    height: 70vh;
+    overflow-y: auto;
+  }
+
+  /* ///////////////////////////////// */
+  .header__nav .nav__list {
+    display: none;
+  }
+  .nav__list--active {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    row-gap: 30px;
+  }
+  .nav__link {
+    padding-bottom: 5px;
+  }
+  .btn-menu {
+    display: block;
+  }
+}
+
+@media (max-width: 590px) {
+  .poster__title {
+    font-size: 32px;
+  }
+  .info__img {
+    width: 100%;
   }
 }

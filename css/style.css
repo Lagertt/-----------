@@ -84,7 +84,6 @@ p {
 
 .hidden {
   display: none;
-  height: 0%;
 }
 
 body {
@@ -168,6 +167,22 @@ section {
   padding-bottom: 16px;
   border-bottom: solid 2px rgba(243, 246, 253, 100%);
   transition: all 0.2s ease-in-out;
+}
+
+.btn-menu {
+  display: none;
+  background-image: url('../img/menu.svg');
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+  transition: background-image 0.3s ease-in-out;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.btn-menu--active {
+  background-image: url('../img/cross.svg');
 }
 
 /*-----------------POSTERS-----------------*/
@@ -386,13 +401,16 @@ section {
   align-self: center;
 }
 
-.tables__item {
-  height: 100%;
-  transition: height 5s ease-in-out;
-}
-
 .tables__item:not(:last-child) {
   margin-bottom: 60px;
+}
+.table {
+  width: 100%;
+  height: 100%;
+}
+.table__box {
+  width: auto;
+  overflow-x: auto;
 }
 
 .table__title {
@@ -405,7 +423,7 @@ section {
 
 .table__body {
   width: 100%;
-  table-layout: fixed;
+  table-layout: auto;
   border-collapse: collapse;
 }
 
@@ -457,7 +475,6 @@ section {
 
 /*-----------------DROP-DOWN LIST-----------------*/
 .propertys__container {
-  /* width: 1000px; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -527,10 +544,6 @@ section {
 }
 
 /*-----------------FINAL TEXT-----------------*/
-/* .text__container {
-  width: 1000px;
-} */
-
 .text__title::before {
   height: 1px;
 }
@@ -552,11 +565,11 @@ section {
   display: flex;
   align-items: start;
   justify-content: space-between;
+  column-gap: 40px;
 }
 
 .footer__left-column {
   color: var(--color-light);
-  margin-right: 40px;
 }
 .footer__descr {
   font-size: 16px;
