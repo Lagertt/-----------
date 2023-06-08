@@ -126,7 +126,7 @@ section {
   background-color: var(--color-dark);
   width: 20%;
   height: 2px;
-  top: -40%;
+  top: -20px;
   left: 40%;
 }
 
