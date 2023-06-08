@@ -108,6 +108,9 @@
 }
 
 @media (max-width: 590px) {
+  .poster {
+    background-attachment: scroll;
+  }
   .poster__title {
     font-size: 32px;
   }
