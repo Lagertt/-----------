@@ -54,3 +54,20 @@ video.addEventListener('ended', () => {
   btnPlay.classList.remove('hidden');
   video.removeAttribute('controls', 'controls');
 });
+
+/////////////////////бургер-меню//////////////////////////////
+const btnBurger = document.querySelector('.btn-menu');
+const menu = document.querySelector('.nav__list');
+
+btnBurger.addEventListener('click', MenuAction);
+
+menu.addEventListener('click', (event) => {
+  let target = event.target;
+  if (target.nodeName !== 'A') return;
+  setTimeout(MenuAction, 100);
+});
+
+function MenuAction() {
+  menu.classList.toggle('nav__list--active');
+  btnBurger.classList.toggle('btn-menu--active');
+}
